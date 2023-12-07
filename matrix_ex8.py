@@ -1,14 +1,14 @@
-N = int(input("Enter the number of rows and columns: "))
+n = int(input("Enter the number of rows and columns: "))
 
 matrix = []
-for i in range(N):
+for i in range(n):
     row_input = input(f"Enter row {i + 1}: ")
     matrix.append(row_input)
 
 search_symbol = input("Enter the symbol to search for: ")
 
 found = False
-for row in range(N):
+for row in range(n):
     for col in range(len(matrix[row])):
         if matrix[row][col] == search_symbol:
             print(f"({row}, {col})")
